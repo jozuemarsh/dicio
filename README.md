@@ -1,0 +1,2 @@
+# dicio
+Dicionário brasileiro online.
