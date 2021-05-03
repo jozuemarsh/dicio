@@ -20,8 +20,8 @@ class Engine{
         if (empty($word)) {
             throw new Exception('Palavra não encontrada');
         }
-        $word = Utils::clear_string($word);
-        $url = Utils::format_url(self::BASE_URL) . $word;
+        $word = Formatter::clear_string($word);
+        $url = Formatter::format_url(self::BASE_URL) . $word;
         $page = Crawler::page($url);
         if (!is_object($page)) {
             throw new Exception('Erro no Crawler');
